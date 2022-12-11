@@ -7,7 +7,7 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.callbacks import EarlyStopping
 from keras.utils.vis_utils import plot_model
 from rouge import Rouge
-from attention import AttentionLayer
+from Summarization.attention import AttentionLayer
 
 class Seq2Seq(tf.keras.Model):
     def __init__(self, latent_dim, embedding_dim, maxlen_text, text_vocab_length, headline_vocab_length, ** kwargs):
